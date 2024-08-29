@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --coverage",
     "build": "npx tsc",
     "start": "node dist/server.js",
     "test:watch": "jest --watch",
