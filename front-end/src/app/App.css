@@ -1,0 +1,165 @@
+@import '@fontsource/roboto/index.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("./chartbg.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  margin-top: 5%; /* Use a percentage for responsiveness */
+}
+
+.nav-icon {
+  background-color: rgba(240, 240, 240, 0.9);
+  height: 5vh; /* Use vh for height */
+  width: 5vh; /* Use vh for width */
+  margin: 5vh 10vw 0 10vw; /* Use vh and vw for margins */
+}
+
+.nav-icon:hover {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.home-container,
+.upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(240, 240, 240, 0.9);
+  width: 80%; /* Increased width for responsiveness */
+  max-width: 360px; /* Keep max-width for larger screens */
+  margin: 2vh auto; /* Center with auto left and right margins */
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.home-container {
+  height: 25vh; /* Responsive height */
+}
+
+.upload-container {
+  padding-bottom: 5vh; /* Responsive padding */
+}
+
+.upload-component {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 5%; /* Adjusted margin for responsiveness */
+}
+
+.upload-button,
+.upload-input {
+  width: 80%; /* Make button and input responsive */
+  max-width: 300px; /* Maintain a max-width */
+  margin: 2vh 0; /* Use vh for vertical spacing */
+}
+
+form {
+  margin-top: 5%; /* Adjusted margin for responsiveness */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 25px;
+}
+
+.inputCode {
+  margin: 2vh 0; /* Use vh for margin */
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 90%; /* Adjust width for responsiveness */
+  margin: 5vh auto; /* Center with auto margins */
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+}
+
+table {
+  width: 100%; /* Ensure the table takes full width */
+  border-collapse: collapse; /* Merge borders */
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+th, td {
+  padding: 10px; /* Increased padding for better spacing */
+  text-align: left; /* Align text to the left */
+  border: solid 2px #ccc; /* Light border for rows */
+}
+
+th {
+  background-color: rgba(100, 100, 100, 0.8); /* Darker background for header */
+  color: white; /* White text for contrast */
+  border-bottom: 3px solid black; /* Bold bottom border */
+}
+
+tr:nth-child(even) {
+  background-color: rgba(200, 200, 200, 0.3); /* Alternate row colors */
+}
+
+tr:hover {
+  background-color: rgba(150, 150, 150, 0.5); /* Highlight row on hover */
+}
+
+img {
+  max-width: 50px; /* Set a max width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Slightly rounded corners for images */
+}
+
+.result-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Make responsive */
+}
+
+.value-inline{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1vh 0; /* Use vh for vertical spacing */
+  font-size: 1.2em; /* Use em for responsive font size */
+}
+
+
+.result-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh 0; /* Use vh for vertical spacing */
+  font-size: 1.2em; /* Use em for responsive font size */
+  width: 60vh;
+}
+
+.result-icon {
+  width: 3vw; /* Use vw for responsive width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.result-button {
+  margin-top: 2vh; /* Use vh for margin */
+}
+
+.success {
+  text-align: center;
+  align-items: center;
+  color: rgba(0, 180, 0, 0.8);
+}
